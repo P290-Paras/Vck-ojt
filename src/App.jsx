@@ -1,6 +1,6 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import HomePage from "./pages/Homepage";
+
 
 import Footer from "./components/Footer/Footer";
 
@@ -9,13 +9,14 @@ import "./style/pages.css";
 
 import NotFoundPage from "./pages/NotFoundPage";
 import CoursesPage from "./pages/CoursesPage";
-import Aboutpage from "./pages/Aboutpage";
-import Contactpage from "./pages/Contactpage";
-import Admissionpage from "./pages/Admissionpage";
+import Aboutpage from "./pages/AboutPage";
+import Contactpage from "./pages/ContactPage";
+import Admissionpage from "./pages/AdmissionPage";
 import Header from "./components/header/header";
 import ChatbotComponent from "./components/chatbot/ChatbotComponents";
 import DeveloperInfoPopup from "./components/Developerinfo/DeveloperInfoPopup";
 import { useState } from "react";
+import HomePage from "./pages/Homepage";
 
 function App() {
     const [showPopup, setShowPopup] = useState(true);
@@ -39,7 +40,7 @@ function App() {
         <Header/>
         <div className="content">
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<HomePage/>} />
             <Route path="/contact" element={<Contactpage />} />
             <Route path="/about" element={<Aboutpage/>} />
             <Route path="/courses" element={<CoursesPage/>}/>
