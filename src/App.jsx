@@ -12,6 +12,7 @@ import HomePage from "./pages/Homepage";
 import AdmissionsPage from "./pages/AdmissionPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
     const [showPopup, setShowPopup] = useState(true);
@@ -36,7 +37,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<HomePage/>} />
-            <Route path="/contact" element={<Contactpage/>} />
+            <Route path="/contact" element={<ContactPage/>} />
             <Route path="/about" element={<AboutPage/>} />
             <Route path="/courses" element={<CoursesPage/>}/>
             <Route path="/admissions" element={<AdmissionsPage/>} />
