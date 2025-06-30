@@ -1,4 +1,4 @@
-const Aboutpage = () =>{
+const AboutPage = () =>{
     return (
     
         <div className="page-container" style={{overflow:"auto"}}>
@@ -37,7 +37,7 @@ const Aboutpage = () =>{
         </div>
     )
 }
-export default Aboutpage;
+export default AboutPage;
 
 
 
