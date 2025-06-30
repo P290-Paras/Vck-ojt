@@ -1,22 +1,17 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
-
 import Footer from "./components/Footer/Footer";
-
 import "./style/pages.css";
-
-
-import NotFoundPage from "./pages/NotFoundPage";
 import CoursesPage from "./pages/CoursesPage";
 import Aboutpage from "./pages/AboutPage";
 import Contactpage from "./pages/ContactPage";
-import Admissionpage from "./pages/AdmissionPage";
 import Header from "./components/header/header";
 import ChatbotComponent from "./components/chatbot/ChatbotComponents";
 import DeveloperInfoPopup from "./components/Developerinfo/DeveloperInfoPopup";
 import { useState } from "react";
 import HomePage from "./pages/Homepage";
+import AdmissionsPage from "./pages/AdmissionPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
     const [showPopup, setShowPopup] = useState(true);
@@ -41,11 +36,11 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<HomePage/>} />
-            <Route path="/contact" element={<Contactpage />} />
+            <Route path="/contact" element={<Contactpage/>} />
             <Route path="/about" element={<Aboutpage/>} />
             <Route path="/courses" element={<CoursesPage/>}/>
-            <Route path="/admissions" element={<Admissionpage />} />
-            <Route path="*" element={<NotFoundPage />} />
+            <Route path="/admissions" element={<AdmissionsPage/>} />
+            <Route path="*" element={<NotFoundPage/>} />
           </Routes>
         </div>
         <ChatbotComponent/>

@@ -23,15 +23,10 @@
         src="https://via.placeholder.com/300x200?text=404+Error"
         alt="Page Not Found"
         style={{ marginTop: "20px", maxWidth: "100%", height: "auto" }}
-/>
-</div>
-
-          
-
-
-
-    )
-}
+      />
+      </div>
+);
+};
 
 export default NotFoundPage;
 
