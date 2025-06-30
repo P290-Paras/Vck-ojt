@@ -1,0 +1,28 @@
+.main-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1acccc;
+  
+}
+
+
+.content {
+  background-color: #1acccc;
+  
+
+  flex-grow: 1;
+  
+  display: flex;
+  
+  justify-content: center;
+  align-items: flex-start;
+  
+  padding: 20px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
